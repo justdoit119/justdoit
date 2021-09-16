@@ -140,6 +140,7 @@
     easing: "ease-in-out"
   });
 
+
   $('.services').hover(
     function(){
       $('.ps_span').stop().animate({'width': '95%', 'border-radius': '12px'}, 1000);
