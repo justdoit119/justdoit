@@ -141,7 +141,7 @@
   });
 
 
-  $('.services').hover(
+  $('.services .aos-animate').css(
     function(){
       $('.ps_span').stop().animate({'width': '95%', 'border-radius': '12px'}, 1000);
       $('.ai_span').stop().animate({'width': '95%', 'border-radius': '12px'}, 1000);
@@ -158,24 +158,7 @@
       $('.dsmax3_span').stop().animate({'width': '55%', 'border-radius': '12px'}, 1000);
       $('.clip_span').stop().animate({'width': '80%', 'border-radius': '12px'}, 1000);
     
-    },
+    });
 
-    function(){
-      $('.ps_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.ai_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.xd_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-
-      $('.html_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.css_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.jQ_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-
-      $('.hancom_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.ppt_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.excell_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-
-      $('.dsmax3_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-      $('.clip_span').stop().delay(1500).animate({'width': '0%', 'border-radius': '12px'}, 1500);
-
-  });
 
 })(jQuery);

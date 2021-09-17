@@ -631,7 +631,7 @@ section {
 .ps > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.ps > div > span > span {display: block; width: 0%; height: 100%; background: #2c6bf7; border-radius: 12px;}
+.ps_span {display: block; width: 0%; height: 100%; background: #2c6bf7; border-radius: 12px;}
 /* .ps:hover > div > span > span {display: block; width: 95%;  border-radius: 12px; transition: all 1s;} */
 
 .ai {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -640,7 +640,7 @@ section {
 .ai > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.ai > div > span > span {display: block; width: 0%; height: 100%; background: #d54528; border-radius: 12px;}
+.ai_span {display: block; width: 0%; height: 100%; background: #d54528; border-radius: 12px;}
 /* .ai:hover > div > span > span {display: block; width: 95%;  border-radius: 12px; transition: all 1s;} */
 
 .xd {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -649,8 +649,15 @@ section {
 .xd > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.xd > div > span > span {display: block; width: 0%; height: 100%; background: #8337e0; border-radius: 12px;}
+.xd_span {display: block; width: 0%; height: 100%; background: #8337e0; border-radius: 12px;}
 /* .xd:hover > div > span > span {display: block; width: 70%;  border-radius: 12px; transition: all 1s;} */
+
+.services .aos-animate .ps_span{animation: ps 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .ai_span{animation: ai 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .xd_span{animation: xd 1s 1s; animation-fill-mode: forwards;}
+@keyframes ps{ 0% {width: 0%;} 100% {width: 95%; border-radius: 12px;}}
+@keyframes ai{ 0% {width: 0%;} 100% {width: 95%; border-radius: 12px;}}
+@keyframes xd{ 0% {width: 0%;} 100% {width: 65%; border-radius: 12px;}}
 
 
 .programming {width: 100%; height: 100%;}
@@ -660,7 +667,7 @@ section {
 .html > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.html > div > span > span {display: block; width: 0%; height: 100%; background: #e75822; border-radius: 12px;}
+.html_span {display: block; width: 0%; height: 100%; background: #e75822; border-radius: 12px;}
 /* .html:hover > div > span > span {display: block; width: 90%;  border-radius: 12px; transition: all 1s;} */
 
 .css {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -669,7 +676,7 @@ section {
 .css > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.css > div > span > span {display: block; width: 0%; height: 100%; background: #1192f8; border-radius: 12px;}
+.css_span {display: block; width: 0%; height: 100%; background: #1192f8; border-radius: 12px;}
 /* .css:hover > div > span > span {display: block; width: 80%;  border-radius: 12px; transition: all 1s;} */
 
 .jQ {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -678,9 +685,15 @@ section {
 .jQ > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.jQ > div > span > span {display: block; width: 0%; height: 100%; background: #0868ac; border-radius: 12px;}
+.jQ_span {display: block; width: 0%; height: 100%; background: #0868ac; border-radius: 12px;}
 /* .jQ:hover > div > span > span {display: block; width: 60%;  border-radius: 12px; transition: all 1s;} */
 
+.services .aos-animate .html_span{animation: html 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .css_span{animation: css 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .jQ_span{animation: jQ 1s 1s; animation-fill-mode: forwards;}
+@keyframes html{ 0% {width: 0%;} 100% {width: 90%; border-radius: 12px;}}
+@keyframes css{ 0% {width: 0%;} 100% {width: 85%; border-radius: 12px;}}
+@keyframes jQ{ 0% {width: 0%;} 100% {width: 65%; border-radius: 12px;}}
 
 .office {width: 100%; height: 100%;}
 .hancom {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -689,7 +702,7 @@ section {
 .hancom > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.hancom > div > span > span {display: block; width: 0%; height: 100%; background: #209ddf; border-radius: 12px;}
+.hancom_span {display: block; width: 0%; height: 100%; background: #209ddf; border-radius: 12px;}
 /* .hancom:hover > div > span > span {display: block; width: 70%;  border-radius: 12px; transition: all 1s;} */
 
 .ppt {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -698,7 +711,7 @@ section {
 .ppt > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.ppt > div > span > span {display: block; width: 0%; height: 100%; background: #c43e1c; border-radius: 12px;}
+.ppt_span {display: block; width: 0%; height: 100%; background: #c43e1c; border-radius: 12px;}
 /* .ppt:hover > div > span > span {display: block; width: 80%;  border-radius: 12px; transition: all 1s;} */
 
 .excell {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -707,8 +720,15 @@ section {
 .excell > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.excell > div > span > span {display: block; width: 0%; height: 100%; background: #107c41; border-radius: 12px;}
+.excell_span {display: block; width: 0%; height: 100%; background: #107c41; border-radius: 12px;}
 /* .excell:hover > div > span > span {display: block; width: 50%;  border-radius: 12px; transition: all 1s;} */
+
+.services .aos-animate .hancom_span{animation: hancom 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .ppt_span{animation: ppt 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .excell_span{animation: excell 1s 1s; animation-fill-mode: forwards;}
+@keyframes hancom{ 0% {width: 0%;} 100% {width: 80%; border-radius: 12px;}}
+@keyframes ppt{ 0% {width: 0%;} 100% {width: 80%; border-radius: 12px;}}
+@keyframes excell{ 0% {width: 0%;} 100% {width: 50%; border-radius: 12px;}}
 
 .dsmax3 {width: 100%; height: 48px; margin-bottom: 8px;}
 .dsmax3 > img {float: left; width: 48px; margin-right: 5%;}
@@ -716,7 +736,7 @@ section {
 .dsmax3 > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.dsmax3 > div > span > span {display: block; width: 0%; height: 100%; background: #209a9c; border-radius: 12px;}
+.dsmax3_span {display: block; width: 0%; height: 100%; background: #209a9c; border-radius: 12px;}
 /* .dsmax3:hover > div > span > span {display: block; width: 50%;  border-radius: 12px; transition: all 1s;} */
 
 .clip {width: 100%; height: 48px; margin-bottom: 8px;}
@@ -725,9 +745,13 @@ section {
 .clip > div > span {display: block; width: 100%; height: 50%; background-color: #EDFFFB;
   border-radius: 12px;
   position: absolute; top: calc(50% - 12px);}
-.clip > div > span > span {display: block; width: 0%; height: 100%; background: #333333; border-radius: 12px;}
+.clip_span {display: block; width: 0%; height: 100%; background: #333333; border-radius: 12px;}
 /* .clip:hover > div > span > span {display: block; width: 80%;  border-radius: 12px; transition: all 1s;} */
 
+.services .aos-animate .dsmax3_span{animation: dsmax3 1s 1s; animation-fill-mode: forwards;}
+.services .aos-animate .clip_span{animation: clips 1s 1s; animation-fill-mode: forwards;}
+@keyframes dsmax3{ 0% {width: 0%;} 100% {width: 55%; border-radius: 12px;}}
+@keyframes clips{ 0% {width: 0%;} 100% {width: 85%; border-radius: 12px;}}
 
 .services .icon-box {
   padding: 30px;
@@ -1168,13 +1192,13 @@ section {
   color:#DEC2B8;
 }
 
-.address>div{width: 500px; height: 60px; margin: 0 auto; background-color: #6A918A; margin-bottom: 60px;
+.address>div{width: 50%; height: 60px; margin: 0 auto; background-color: #6A918A; margin-bottom: 60px;
   text-align: center; line-height: 60px;  font-size: larger; transition: all 0.3s;}
 .address>img{display: block; width: 250px; height: 250px; margin: 0 auto;}
 .address>div>a{display:block; width: 100%; height: 100%; color: #fff;}
 .address>div:hover{background-color: #8F604F; transition: all 0.3s;}
 
-.email>div{width: 500px; height: 60px; margin: 0 auto; background-color: #6A918A; margin-bottom: 60px;
+.email>div{width: 50%; height: 60px; margin: 0 auto; background-color: #6A918A; margin-bottom: 60px;
   text-align: center; line-height: 60px; font-size: larger; transition: all 0.3s;}
 .email>div>a{display:block; width: 100%; height: 100%; color: #fff;}
 .email>div:hover{background-color: #8F604F; transition: all 0.3s;}
