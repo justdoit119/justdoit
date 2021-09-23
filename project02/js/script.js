@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 // 내비게이션 
     $('.Sm').hide();
     $('.Mm > .Ml').hover(
@@ -11,6 +10,13 @@ $(document).ready(function(){
             $('.Sm').stop().slideUp();
         }
     );
+
+    $('.Mm').css({'display':'none'});
+    $('.hambuger').click(function(){
+        $('.Mm').toggle('slow');
+    });
+        
+
 
 // 메인 슬라이드
 var current = 0;
@@ -38,7 +44,7 @@ function move(m_s){
 // 컨텐츠 01 : 베스트메뉴 - bx 슬라이더
 $('.bxslider').bxSlider({
     auto : true, //자동으로 애니메이션 시작
-    speed : 1000, //애니메이션 속도
+    speed : 500, //애니메이션 속도
     pause : 4000, //애니메이션 유지시간(1000 = 1초)
     mode : 'horizontal', //슬라이드 모드('fade','horizontal',vertcal' 이 있음)
     autoControls : false , //시작 및 중지버튼이 보여짐
@@ -49,42 +55,25 @@ $('.bxslider').bxSlider({
     slideWidth: 280,
     moveSlides: 1,
 });
-
-/*
-//con2 doboo brand // 스크롤을 벗어나면 제자리 돌아오는 작업을 해야함! 
-$(window).scroll(function(){
-    $('.con2_right').each(function(){
-        var con2R = $(this).offset().top + $(this).outerHeight();
-        var con2R_window = $(window).scrollTop() + $(window).height();
-    
-    if(con2R_window > con2R){
-        $('.con2_left').css({'display':'block', 'opacity':'0.3', 'left':'1200px'}).animate({'opacity':'1', 'left':'-60px'},2200);
-        $('.con2_middle').css({'display':'block', 'opacity':'0.3', 'left':'1200px'}).animate({'opacity':'1', 'left':'465px'},2000);
-    }
-    // else if(){}
-    });
-});
-*/
-
+ 
 //컨텐츠 02 : 도부 브랜드 
 $(window).scroll(function(){
-      
-    var sct = $(document).scrollTop(); //내려간것은 인식하는데 올라간것은 인식을 못함
-    
-    if(sct > 1100){
-        $('.con2_left').css({'display':'block','opacity':'0.3', 'left':'1200px'}).animate({'opacity':'1', 'left':'-60px'},2000);
-        $('.con2_middle').css({'display':'block','opacity':'0.3', 'left':'1200px'}).animate({'opacity':'1', 'left':'465px'},1500);
-    }
-    else if(sct < 0){
-        $('.con2_left').animate({'left':'1200px'},2200);
-        $('.con2_middle').animate({'left':'1200px'},2000);
-    }
+    var sct = $(document).scrollTop();
 
+    if( 1000 < sct && sct < 2400 ){
+        $('.con2_left').show();
+        $('.con2_middle').show();
+    }
+    else if( sct == 0 && sct < 2500 ){
+        $('.con2_left').hide();
+        $('.con2_middle').hide();
+    }  
+    return true
 });
 
 // 위로 올라가기 top 버튼
 $( window ).scroll( function() {
-	if ( $( this ).scrollTop() > 200 ) {
+	if ( $( this ).scrollTop() > 300 ) {
 		$( '.window_top' ).fadeIn();
 	} else {
 		$( '.window_top' ).fadeOut();
