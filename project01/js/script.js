@@ -68,7 +68,7 @@ $(document).ready(function(){
     function timer_s(){
         setIntervalId_s = setInterval(function(){
             var m_s = current_s + 1;
-            if(m_s == 3){m_s = 0;}
+            if(m_s == 2){m_s = 0;}
             movie(m_s)},4000);
     }
     

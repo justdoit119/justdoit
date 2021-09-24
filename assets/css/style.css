@@ -843,7 +843,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(184, 222, 214, 0.6);
+  background: rgba(222, 194, 184, 0.6);
   position: absolute;
   left: 100%;
   right: 0;

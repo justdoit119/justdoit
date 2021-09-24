@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    
 // 내비게이션 
     $('.Sm').hide();
     $('.Mm > .Ml').hover(
@@ -11,11 +12,10 @@ $(document).ready(function(){
         }
     );
 
-    $('.Mm').css({'display':'none'});
     $('.hambuger').click(function(){
         $('.Mm').toggle('slow');
     });
-        
+
 
 
 // 메인 슬라이드
@@ -57,6 +57,9 @@ $('.bxslider').bxSlider({
 });
  
 //컨텐츠 02 : 도부 브랜드 
+$('.con2_left').hide();
+$('.con2_middle').hide();
+
 $(window).scroll(function(){
     var sct = $(document).scrollTop();
 
