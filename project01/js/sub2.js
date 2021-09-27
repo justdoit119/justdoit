@@ -14,8 +14,21 @@ $(document).ready(function(){
 
 /* 여기 입력!*/
 
-
-    
+$('.mapboxset').click(function(){
+    $('html').animate({scrollTop:$('.accommodation').offset().top},500)
+});
+$('.L_mapbox > div:nth-child(6)').click(function(){
+    $('html').animate({scrollTop:$('.theater').offset().top},500)
+});
+$('.L_mapbox > div:nth-child(7)').click(function(){
+    $('html').animate({scrollTop:$('.display_room').offset().top},500)
+});
+$('.L_mapbox > div:nth-child(8)').click(function(){
+    $('html').animate({scrollTop:$('.cafe').offset().top},500)
+});
+$('.M_mapbox > div:nth-child(2)').click(function(){
+    $('html').animate({scrollTop:$('.tatami').offset().top},500)
+});
     
     // 1200 사이드 메뉴 나타내고 없애기 
     
